@@ -1,22 +1,34 @@
-# web-scraping-challenge
+# web-scraping-challenge:
 
-To build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
+Build a web application 'Mission to Mars' of
+
+* scraping  various websites
+
+  - [NASA Mars News Site](https://mars.nasa.gov/news/)
+
+  - [JPL Featured Space Image](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars)
+
+  - [Mars Facts webpage](https://space-facts.com/mars/)
+
+  - [USGS Astrogeology site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
+
+* storing the data into MongoDB
+
+* displaying the information in a single HTML page
 
 ## Step 1 - Scraping
 
+* mission_to_mars.ipynb, mission_to_mars.py
+
 ### NASA Mars News
 
-* Scrape the [NASA Mars News Site](https://mars.nasa.gov/news/) and collect the latest News Title and Paragraph Text. 
+* Scrape the NASA Mars News Site - (https://mars.nasa.gov/news/) and collect the latest News Title and Paragraph Text. 
 
 ### JPL Mars Space Images - Featured Image
 
-* Visit the url for JPL Featured Space Image [here](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars).
+* Visit the url for JPL Featured Space Image - (https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars).
 
-* Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called `featured_image_url`.
-
-* Make sure to find the image url to the full size `.jpg` image.
-
-* Make sure to save a complete url string for this image.
+* Find the image url for the current Featured Mars Image and assign the url string to a variable called `featured_image_url`.
 
 ### Mars Facts
 
@@ -48,13 +60,6 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 
 * Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
 
-## Hints
-
-* Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
-
-* Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
-
-* Use Bootstrap to structure your HTML template.
 
 ### Copyright
 
